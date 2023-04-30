@@ -24,7 +24,7 @@ public class CmenuInicial {
     private Button menuVeiculo;
     
     @FXML
-    public void abrirFXML() throws IOException {
+    public void abrirFXMLMPC() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPCliente.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
@@ -35,5 +35,20 @@ public class CmenuInicial {
         CMenuPCliente controller = loader.getController();
         // fazer algo com o controlador, se necessário
     }
+
+    @FXML
+    public void abrirFXMLMPV() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPVeiculo.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    
+        CMenuPCliente controller = loader.getController();
+        // fazer algo com o controlador, se necessário
+    }
+
+
 }
 
