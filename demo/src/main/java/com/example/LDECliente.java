@@ -112,8 +112,6 @@ public class LDECliente implements ILDECliente {
 }
  */
 
-
-
 }
 
 // outros métodos da lista (ex: remover, buscar, etc.)

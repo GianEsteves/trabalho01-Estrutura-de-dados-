@@ -16,6 +16,9 @@ public class NohCliente {
         this.cpf = cpf;
     }
 
+    public NohCliente(String cpf2, String cnh2, String telefone2, String nome2) {
+    }
+
     public void setProx(NohCliente n) { this.proximo = n; }
 
     public void setAnt(NohCliente n) { this.anterior = n; }
