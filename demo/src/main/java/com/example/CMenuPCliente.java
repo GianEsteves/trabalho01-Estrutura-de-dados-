@@ -55,4 +55,17 @@ public class CMenuPCliente {
         // fazer algo com o controlador, se necessário
     }
 
+    @FXML
+    public void abrirFXMLMaddExcluir() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuClienteExcluir.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    
+        //CMenuPCliente controller = loader.getController();
+        // fazer algo com o controlador, se necessário
+    }
+
 }
