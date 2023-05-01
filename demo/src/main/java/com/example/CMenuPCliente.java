@@ -30,8 +30,21 @@ public class CMenuPCliente {
     private Button removerCliente;
 
     @FXML
-    public void abrirFXMLMadd() throws IOException {
+    public void abrirFXMLMaddI() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuClienteadd.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    
+        //CMenuPCliente controller = loader.getController();
+        // fazer algo com o controlador, se necessário
+    }
+
+    @FXML
+    public void abrirFXMLMaddF() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuClienteaddF.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         Stage stage = new Stage();
