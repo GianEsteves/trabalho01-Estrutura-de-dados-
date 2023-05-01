@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CMenuVeiculoAddF">
+   <children>
+      <Label layoutX="37.0" layoutY="89.0" prefHeight="33.0" prefWidth="78.0" text="Placa:" />
+      <TextField fx:id="salvaPlaca" layoutX="70.0" layoutY="93.0" />
+      <Label layoutX="37.0" layoutY="116.0" prefHeight="33.0" prefWidth="78.0" text="Ano:" />
+      <Label layoutX="37.0" layoutY="149.0" prefHeight="33.0" prefWidth="78.0" text="Modelo:" />
+      <Label layoutX="37.0" layoutY="176.0" prefHeight="33.0" prefWidth="114.0" text="Nuemro de lugares:" />
+      <Label layoutX="37.0" layoutY="200.0" prefHeight="33.0" prefWidth="78.0" text="Categoria:" />
+      <Label layoutX="37.0" layoutY="227.0" prefHeight="33.0" prefWidth="78.0" text="Potencia:" />
+      <Label layoutX="37.0" layoutY="260.0" prefHeight="33.0" prefWidth="78.0" text="Marca:" />
+      <TextField fx:id="salvaAno" layoutX="70.0" layoutY="120.0" />
+      <TextField fx:id="salvaModelo" layoutX="84.0" layoutY="153.0" prefHeight="25.0" prefWidth="135.0" />
+      <TextField fx:id="salvaNLugares" layoutX="145.0" layoutY="180.0" prefHeight="15.0" prefWidth="72.0" />
+      <TextField fx:id="salvaCategoria" layoutX="94.0" layoutY="204.0" prefHeight="25.0" prefWidth="127.0" />
+      <TextField fx:id="salvaPotencia" layoutX="94.0" layoutY="231.0" prefHeight="25.0" prefWidth="127.0" />
+      <TextField fx:id="salvaMarca" layoutX="77.0" layoutY="264.0" />
+      <Button fx:id="cadastrar" layoutX="24.0" layoutY="341.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="114.0" text="Cadastrar" />
+      <Button fx:id="limpar" layoutX="145.0" layoutY="341.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="114.0" text="Limpar" />
+      <Button fx:id="voltar" layoutX="278.0" layoutY="341.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="114.0" text="Voltar" />
+   </children>
+</AnchorPane>

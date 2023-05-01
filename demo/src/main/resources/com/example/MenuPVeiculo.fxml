@@ -3,11 +3,10 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CMenuPVeiculo">
    <children>
-      <Button fx:id="cadastrarNoInicio" layoutX="28.0" layoutY="47.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="143.0" text="Cadastrar no Inincio" />
-      <Button fx:id="cadastrarNoFim" layoutX="28.0" layoutY="98.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="143.0" text="Cadastrar no fim " />
+      <Button fx:id="cadastrarNoInicio" layoutX="28.0" layoutY="47.0" mnemonicParsing="false" onAction="#abrirFXMLMCadastrarI" prefHeight="43.0" prefWidth="143.0" text="Cadastrar no Inincio" />
+      <Button fx:id="cadastrarNoFim" layoutX="28.0" layoutY="98.0" mnemonicParsing="false" onAction="#abrirFXMLMCadastrarF" prefHeight="43.0" prefWidth="143.0" text="Cadastrar no fim " />
       <Button fx:id="editarVeiculo" layoutX="28.0" layoutY="147.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="143.0" text="Editar Veiculo" />
       <Button fx:id="ExcluirVeiculo" layoutX="28.0" layoutY="200.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="143.0" text="Excluir Veiculo" />
       <Button fx:id="listarVeiculoDoInicioAoFim" layoutX="28.0" layoutY="253.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="143.0" text="Lsitar inicio ao fim" />
