@@ -33,4 +33,17 @@ public class CMenuPLocacao {
         // fazer algo com o controlador, se necessário
     }
 
+    @FXML
+    public void abrirFXMLMRemove() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuLocacaoRemove.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    
+        //CMenuPCliente controller = loader.getController();
+        // fazer algo com o controlador, se necessário
+    }
+
 }

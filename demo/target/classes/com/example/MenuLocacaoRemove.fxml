@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CMenuLocacaoRemove">
+   <children>
+      <Label layoutX="41.0" layoutY="76.0" prefHeight="39.0" prefWidth="213.0" text="Infrome a Placa do Veiculo:" />
+      <Label layoutX="41.0" layoutY="109.0" prefHeight="39.0" prefWidth="213.0" text="Informe o CPF do Cliente:" />
+      <TextField fx:id="salvaPlaca" layoutX="188.0" layoutY="83.0" />
+      <TextField fx:id="salvaCPF" layoutX="188.0" layoutY="116.0" />
+      <Button fx:id="excluir" layoutX="32.0" layoutY="322.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="116.0" text="Excluir" />
+      <Button fx:id="foltar" layoutX="158.0" layoutY="322.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="116.0" text="Voltar" />
+   </children>
+</AnchorPane>
