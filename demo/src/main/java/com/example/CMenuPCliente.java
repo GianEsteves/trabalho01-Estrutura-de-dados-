@@ -68,4 +68,16 @@ public class CMenuPCliente {
         // fazer algo com o controlador, se necessário
     }
 
+    @FXML
+    public void abrirFXMLMaddEditar() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuClienteEditar.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    
+        //CMenuPCliente controller = loader.getController();
+        // fazer algo com o controlador, se necessário
+    }
 }
