@@ -45,6 +45,7 @@ public class CMenuAddCliente {
         LDECliente lc = new LDECliente(null, null);
         lc.adicionarNoCliente(novoNoh);
         lc.listarCliente();
+        //limpar();
         
         //limparCampos(null);
         
@@ -53,5 +54,13 @@ public class CMenuAddCliente {
 
     private void alertInterface(String string, String string2, AlertType information) {
         //System.out.print("foi");
+    }
+
+    @FXML
+    void limpar(){
+        salvaCPF.setText("");
+        salvaCNH.setText("");
+        salvaTelefone.setText("");
+        salvaNome.setText("");
     }
 }
