@@ -8,10 +8,6 @@ import javafx.stage.Stage;
 
 public class App extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
-
     private Stage primaryStage;
 
     @Override
@@ -20,6 +16,9 @@ public class App extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("MenuPrincipal.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }
