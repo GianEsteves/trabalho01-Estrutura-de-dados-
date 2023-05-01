@@ -65,8 +65,4 @@ public class NohCliente {
         this.telefone = telefone;
     }
 
-    
-
-
-    
 }
