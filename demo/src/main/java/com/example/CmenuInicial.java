@@ -62,6 +62,19 @@ public class CmenuInicial {
         // fazer algo com o controlador, se necessário
     }
 
+    @FXML
+    public void abrirFXMLMPL() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPLocacao.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    
+        //CMenuPCliente controller = loader.getController();
+        // fazer algo com o controlador, se necessário
+    }
+
 
 }
 

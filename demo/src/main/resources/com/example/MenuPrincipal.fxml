@@ -50,7 +50,7 @@
             <Button fx:id="menuCliente" layoutX="63.0" layoutY="275.0" mnemonicParsing="false" onAction="#abrirFXMLMPC" prefHeight="41.0" prefWidth="108.0" text="Menu Cliente" />
             <Button fx:id="menuVeiculo" layoutX="184.0" layoutY="275.0" mnemonicParsing="false" onAction="#abrirFXMLMPV" prefHeight="41.0" prefWidth="108.0" text="Menu Veiculo" />
             <Button fx:id="menuCategoria" layoutX="304.0" layoutY="275.0" mnemonicParsing="false" onAction="#abrirFXMLMPCa" prefHeight="41.0" prefWidth="108.0" text="Menu Categoria" />
-            <Button fx:id="menuLocacao" layoutX="422.0" layoutY="275.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="108.0" text="Menu Locação" />
+            <Button fx:id="menuLocacao" layoutX="422.0" layoutY="275.0" mnemonicParsing="false" onAction="#abrirFXMLMPL" prefHeight="41.0" prefWidth="108.0" text="Menu Locação" />
       </children>
     </AnchorPane>
   </children>
