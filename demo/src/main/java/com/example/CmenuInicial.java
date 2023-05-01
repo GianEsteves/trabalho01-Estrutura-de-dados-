@@ -32,7 +32,7 @@ public class CmenuInicial {
         stage.setScene(scene);
         stage.show();
     
-        CMenuPCliente controller = loader.getController();
+        //CMenuPCliente controller = loader.getController();
         // fazer algo com o controlador, se necessário
     }
 
@@ -45,7 +45,20 @@ public class CmenuInicial {
         stage.setScene(scene);
         stage.show();
     
-        CMenuPCliente controller = loader.getController();
+        //CMenuPCliente controller = loader.getController();
+        // fazer algo com o controlador, se necessário
+    }
+
+    @FXML
+    public void abrirFXMLMPCa() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPCategoria.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+    
+        //CMenuPCliente controller = loader.getController();
         // fazer algo com o controlador, se necessário
     }
 
