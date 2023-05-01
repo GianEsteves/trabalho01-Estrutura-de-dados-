@@ -5,7 +5,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.CMenuPLocacao">
    <children>
-      <Button fx:id="addLLocacao" layoutX="43.0" layoutY="59.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="127.0" text="Criar uma Locação " />
+      <Button fx:id="addLLocacao" layoutX="43.0" layoutY="59.0" mnemonicParsing="false" onAction="#abrirFXMLMadd" prefHeight="35.0" prefWidth="127.0" text="Criar uma Locação " />
       <Button fx:id="listarLocacao" layoutX="43.0" layoutY="103.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="127.0" text="Listar Locações " />
       <Button fx:id="excluirLocacao" layoutX="43.0" layoutY="145.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="127.0" text="Excluir Locações " />
    </children>
