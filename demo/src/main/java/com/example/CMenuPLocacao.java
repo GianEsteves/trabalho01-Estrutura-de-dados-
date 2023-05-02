@@ -46,4 +46,10 @@ public class CMenuPLocacao {
         // fazer algo com o controlador, se necessário
     }
 
+    @FXML
+    void listarLocacao(){
+        LDELocaçao ll = new LDELocaçao(null, null)
+        ll.listarInicioFimLocacao();
+    }
+
 }

@@ -81,4 +81,20 @@ public class CMenuPVeiculo {
         // fazer algo com o controlador, se necessário
     }
 
+    @FXML
+    void listarVeiculoDoInicioAoFim(){
+        LDEVeiculo lv = new LDEVeiculo();
+        //lv.imprimirNohVeiculo();
+        lv.listarInicioFimVeiculo();
+
+    }
+
+    @FXML
+    void listarVeiculoDoFimAoInicio(){
+        LDEVeiculo lv = new LDEVeiculo();
+        //lv.imprimirNohVeiculo();
+        lv.listarFimInicioVeiculo();
+
+    }
+
 }

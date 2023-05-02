@@ -36,7 +36,7 @@ public class CMenuAddCliente {
     private Button voltar;
 
     @FXML
-    void adicionaDliente() throws Exception {
+    void adicionaliente() throws Exception {
 
         String cpf = salvaCPF.getText();
         String cnh = salvaCNH.getText();
