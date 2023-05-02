@@ -12,9 +12,21 @@ public class CMenuClienteExcluir {
     @FXML
     private TextField pesquisaCPF;
 
+    private LDECliente listaClientes;
+
     @FXML
-    void ExcluirCliente(){
-        
+    void excluirCliente() {
+        listaClientes = new LDECliente(null, null);
+        Long cpf = Long.parseLong(pesquisaCPF.getText());
+        listaClientes.excluirCliente(cpf);
+        limpar();
     }
+    
+
+    @FXML
+    void limpar(){
+        pesquisaCPF.setText("");
+    }
+    
 
 }

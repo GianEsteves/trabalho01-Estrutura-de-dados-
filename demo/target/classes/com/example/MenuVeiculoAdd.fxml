@@ -21,8 +21,8 @@
       <TextField fx:id="salvaCategoria" layoutX="94.0" layoutY="204.0" prefHeight="25.0" prefWidth="127.0" />
       <TextField fx:id="salvaPotencia" layoutX="94.0" layoutY="231.0" prefHeight="25.0" prefWidth="127.0" />
       <TextField fx:id="salvaMarca" layoutX="77.0" layoutY="264.0" />
-      <Button fx:id="cadastrar" layoutX="24.0" layoutY="341.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="114.0" text="Cadastrar" />
-      <Button fx:id="limpar" layoutX="145.0" layoutY="341.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="114.0" text="Limpar" />
-      <Button fx:id="voltar" layoutX="278.0" layoutY="341.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="114.0" text="Voltar" />
+      <Button fx:id="cadastrar" layoutX="24.0" layoutY="341.0" mnemonicParsing="false" onAction="#adicionarVeiculo" prefHeight="48.0" prefWidth="114.0" text="Cadastrar" />
+      <Button fx:id="limpar" layoutX="145.0" layoutY="341.0" mnemonicParsing="false" onAction="#lmpar" prefHeight="48.0" prefWidth="114.0" text="Limpar" />
+      <Button fx:id="voltar" layoutX="278.0" layoutY="341.0" mnemonicParsing="false" onAction="#abrirFXMLIinicial" prefHeight="48.0" prefWidth="114.0" text="Voltar" />
    </children>
 </AnchorPane>
