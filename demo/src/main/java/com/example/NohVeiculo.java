@@ -87,5 +87,8 @@ public class NohVeiculo {
     public String getCategoria() {
         return null;
     }
+
+    public void setCategoria(String text) {
+    }
     
 }

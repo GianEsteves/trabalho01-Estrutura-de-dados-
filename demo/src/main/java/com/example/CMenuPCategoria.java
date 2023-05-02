@@ -23,4 +23,11 @@ public class CMenuPCategoria {
     @FXML
     private Button listarCategoriaIF;
 
+    @FXML
+    void listarCategoriaIF(){
+        LDECategoria lc = new LDECategoria();
+        lc.imprimirNohCategoria();
+        lc.listarFimInicioCategoria();
+    }
+
 }
