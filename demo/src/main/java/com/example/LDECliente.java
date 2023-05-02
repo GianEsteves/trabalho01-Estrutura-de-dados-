@@ -44,15 +44,15 @@ public class LDECliente implements ILDECliente {
     @Override
     public void editarCliente(Long cpf) {
         NohCliente atual = this.primeiro;
-    while (atual != null) {
-        if (atual.getCpf()==(cpf)) {
-            atual.setNome(null);
-            atual.setCnh(0);
-            atual.setTelefone(0);
-            break;
+        while (atual != null) {
+            if (atual.getCpf()==(cpf)) {
+                atual.setNome(null);
+                atual.setCnh(0);
+                atual.setTelefone(0);
+                break;
+            }
+            atual = atual.getProx();
         }
-        atual = atual.getProx();
-    }
 
     }
 

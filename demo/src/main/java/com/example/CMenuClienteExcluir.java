@@ -12,4 +12,9 @@ public class CMenuClienteExcluir {
     @FXML
     private TextField pesquisaCPF;
 
+    @FXML
+    void ExcluirCliente(){
+        
+    }
+
 }
