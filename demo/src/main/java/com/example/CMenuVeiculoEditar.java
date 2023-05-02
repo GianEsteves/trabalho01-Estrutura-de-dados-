@@ -1,10 +1,16 @@
 package com.example;
 
+import java.io.IOException;
+
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
 
 public class CMenuVeiculoEditar {
 
@@ -41,6 +47,7 @@ public class CMenuVeiculoEditar {
     @FXML
     private Button voltar;
 
+
     @FXML
     public void editarVeiculo() {
         String placaBuscada = salvaAbuscadaPlaca.getText();
@@ -71,5 +78,50 @@ public class CMenuVeiculoEditar {
         }
     }
     
+    @FXML
+    void abrirFXMLIinicial() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPrincipal.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
     
+        //CMenuPCliente controller = loader.getController();
+        // fazer algo com o controlador, se necessário
+    }
+
+    @FXML
+    public void buscarVeiculo2() {
+        String placa = buscarPlaca.getText();
+        NohVeiculo veiculoEncontrado = null;
+        for(NohVeiculo v: placa) {
+        if(v.getPlaca().equals(placa)) {
+            veiculoEncontrado = v;
+            break;
+            }
+        }
+        if (veiculoEncontrado != null) {
+            // exibe informações do veículo encontrado
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Veículo encontrado");
+            alert.setHeaderText(null);
+            alert.setContentText("Placa: " + veiculoEncontrado.getPlaca() + "\n" +
+            "Marca: " + veiculoEncontrado.getMarca() + "\n" +
+            "Modelo: " + veiculoEncontrado.getModelo() + "\n" +
+            "Ano: " + veiculoEncontrado.getAno() + "\n" +
+            "Categoria: " + veiculoEncontrado.getCategoria() + "\n" +
+            "Número de lugares: " + veiculoEncontrado.getnLugares() + "\n" +
+            "Potência: " + veiculoEncontrado.getPotencia() + " CV");
+            alert.showAndWait();
+        } else {
+            // exibe mensagem de veículo não encontrado
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Veículo não encontrado");
+            alert.setHeaderText(null);
+            alert.setContentText("Não foi encontrado nenhum veículo com a placa informada.");
+            alert.showAndWait();
+        }
+    }
+
 }
