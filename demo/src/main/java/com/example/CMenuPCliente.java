@@ -80,4 +80,17 @@ public class CMenuPCliente {
         //CMenuPCliente controller = loader.getController();
         // fazer algo com o controlador, se necessário
     }
+
+    @FXML
+    void listarFimInicioVeiculo(){
+        LDECliente lc new LDECliente(null, null);
+        lc.exibirClientes();
+    }
+
+    
+    @FXML
+    void listarClienteFI(){
+        LDECliente lc new LDECliente(null, null);
+        lc.listarCliente();
+    }
 }

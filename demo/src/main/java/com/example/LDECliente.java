@@ -32,7 +32,7 @@ public class LDECliente implements ILDECliente {
 
     @Override
     public void listarCliente() {
-        NohCliente atual = this.primeiro;
+        NohCliente atual = this.ultimo;
         while (atual != null) {
             System.out.println("Nome: " + atual.nome + ", CNH: " + atual.cnh + ", Telefone: " + atual.telefone
                     + ", CPF: " + atual.cpf);
