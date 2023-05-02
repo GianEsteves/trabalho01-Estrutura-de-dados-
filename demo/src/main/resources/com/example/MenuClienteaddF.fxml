@@ -15,8 +15,8 @@
       <TextField fx:id="salvaCPF" layoutX="56.0" layoutY="115.0" prefHeight="25.0" prefWidth="166.0" />
       <TextField fx:id="salvaCNH" layoutX="65.0" layoutY="144.0" prefHeight="25.0" prefWidth="158.0" />
       <TextField fx:id="salvaTelefone" layoutX="80.0" layoutY="173.0" prefHeight="25.0" prefWidth="143.0" />
-      <Button fx:id="cadastra" layoutX="21.0" layoutY="337.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="100.0" text="Cadastrar" />
-      <Button fx:id="limpaOsCampos" layoutX="123.0" layoutY="337.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="100.0" text="Limpar" />
-      <Button fx:id="voltar" layoutX="229.0" layoutY="337.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="100.0" text="Voltar" />
+      <Button fx:id="cadastra" layoutX="21.0" layoutY="337.0" mnemonicParsing="false" onAction="#adicionaDliente" prefHeight="41.0" prefWidth="100.0" text="Cadastrar" />
+      <Button fx:id="limpaOsCampos" layoutX="123.0" layoutY="337.0" mnemonicParsing="false" onAction="#limpar" prefHeight="41.0" prefWidth="100.0" text="Limpar" />
+      <Button fx:id="voltar" layoutX="229.0" layoutY="337.0" mnemonicParsing="false" onAction="#abrirFXMLIinicial" prefHeight="41.0" prefWidth="100.0" text="Voltar" />
    </children>
 </AnchorPane>
