@@ -4,6 +4,8 @@ public interface ILDEVeiculo {
 
     void adicionarNohVeiculo(NohVeiculo novoNoh);
 
+    void adicionarNohVeiculF(NohVeiculo novoNoh);
+
     void imprimirNohVeiculo();
 
     void lerCsv();

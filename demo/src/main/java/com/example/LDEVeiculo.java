@@ -25,6 +25,17 @@ public class LDEVeiculo implements ILDEVeiculo {
     }
 
     @Override
+    public void adicionarNohVeiculF(NohVeiculo novoNoh) {
+        if (this.ultimo == null) {
+            this.ultimo = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            this.ultimo.setAnt(novoNoh);
+            this.ultimo = novoNoh;
+        }
+    }
+
+    @Override
     public void imprimirNohVeiculo() {
         NohVeiculo atual = this.primeiro;
         while (atual != null) {
