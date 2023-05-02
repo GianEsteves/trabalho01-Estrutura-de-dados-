@@ -83,5 +83,8 @@ public class NohVeiculo {
     public void setnLugares(int nLugares) {
         this.nLugares = nLugares;
     }
+
+    public void setCategoria(String text) {
+    }
     
 }
