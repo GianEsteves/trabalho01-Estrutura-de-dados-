@@ -42,27 +42,26 @@ public class CMenuAddCliente {
         String cnh = salvaCNH.getText();
         String telefone = salvaTelefone.getText();
         String nome = salvaNome.getText();
-     
-        
+
         // Cria um novo objeto NohCliente com as informações fornecidas
-        //NohCliente  novoNoh = new NohCliente(nome, 0, 0, 0)
+        // NohCliente novoNoh = new NohCliente(nome, 0, 0, 0)
         NohCliente novoNoh = new NohCliente(nome, cnh, telefone, cpf);
         LDECliente lc = new LDECliente(null, null);
         lc.adicionarNoCliente(novoNoh);
         lc.listarCliente();
-        //limpar();
-        
-        //limparCampos(null);
-        
+        // limpar();
+
+        // limparCampos(null);
+
         alertInterface("SUCESSO", "Cliente adicionado com sucesso!", Alert.AlertType.INFORMATION);
     }
 
     private void alertInterface(String string, String string2, AlertType information) {
-        //System.out.print("foi");
+        // System.out.print("foi");
     }
 
     @FXML
-    void limpar(){
+    void limpar() {
         salvaCPF.setText("");
         salvaCNH.setText("");
         salvaTelefone.setText("");
@@ -77,8 +76,10 @@ public class CMenuAddCliente {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.show();
-    
-        //CMenuPCliente controller = loader.getController();
+
+        // CMenuPCliente controller = loader.getController();
         // fazer algo com o controlador, se necessário
     }
+
+
 }

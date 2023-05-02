@@ -24,6 +24,8 @@ public class CMenuVeiculoExcluir {
     @FXML
     private Button voltar;
 
+    private LDEVeiculo listaVeiculo;
+
     @FXML
     void abrirFXMLIinicial() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPrincipal.fxml"));
@@ -39,6 +41,10 @@ public class CMenuVeiculoExcluir {
 
     @FXML
     void excluir(){
-        
+        listaVeiculo = new LDEVeiculo();
+        String placa = (buscarPlaca.getText());
+        listaVeiculo.excluirVeiculo(placa);
+        //limpar();
+        listaVeiculo.imprimirNohVeiculo();
     }
 }
