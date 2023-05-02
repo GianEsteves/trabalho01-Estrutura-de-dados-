@@ -91,6 +91,9 @@ public class CMenuVeiculoEditar {
         // fazer algo com o controlador, se necessário
     }
 
+    /**
+     * 
+     */
     @FXML
     public void buscarVeiculo2() {
         String placa = buscarPlaca.getText();
