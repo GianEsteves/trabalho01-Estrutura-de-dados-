@@ -70,7 +70,7 @@ public class CMenuAddCliente {
     }
 
     @FXML
-    public void abrirFXMLIinicial() throws IOException {
+    void abrirFXMLIinicial() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPrincipal.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
