@@ -9,7 +9,7 @@ public class NohCliente {
     protected long cpf;
     private NohCliente info;
     
-    public NohCliente(String nome, long cnh, long telefone, long cpf) {
+    public NohCliente(String nome, Long cnh, Long telefone, Long cpf) {
         this.nome = nome;
         this.cnh = cnh;
         this.telefone = telefone;
