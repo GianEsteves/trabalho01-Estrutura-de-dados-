@@ -58,26 +58,7 @@ public class CMenuLocacaoAdd {
     }
 
     @FXML
-    public void adicionarLocacao(ActionEvent event) {
-        // obter informações preenchidas pelo usuário
-    
-        String placa = salvaPlaca.getText();
-        String cpf = salvaCPF.getText();
-
-        // criar objeto Locacao com as informações
-        LDELocacao locacao = new LDELocacao(null, null);
-        locacao.alocarVeiculoCliente(cpf, placa);
-
-        // adicionar locação à lista
-        locacao.adicionarNoLocacao(locacao);
-
-        // limpar campos do formulário
-
-        l();
-    }
-
-    @FXML
-    void l(){
+    void limparCampos(){
         salvaPlaca.setText("");
         salvaCPF.setText("");
     }

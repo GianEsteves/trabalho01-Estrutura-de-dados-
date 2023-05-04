@@ -48,8 +48,8 @@ public class CMenuPLocacao {
 
     @FXML
     void listarLocacao(){
-        LDELocaçao ll = new LDELocaçao(null, null)
-        ll.listarInicioFimLocacao();
+        LDELocacao ldeLocacao = new LDELocacao(null, null);
+        ldeLocacao.listarInicioFimLocacao(null);
     }
 
 }

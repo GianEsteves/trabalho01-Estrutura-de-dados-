@@ -3,12 +3,14 @@ package com.example;
 public class LDELocacao implements ILDELocacao {
     private NohLocacao primeiro;
     private NohLocacao ultimo;
+
     public LDELocacao(NohLocacao primeiro, NohLocacao ultimo) {
         this.primeiro = primeiro;
         this.ultimo = ultimo;
     }
 
     public LDELocacao(NohCliente cliente, NohVeiculo veiculo) {
+        
     }
 
     @Override

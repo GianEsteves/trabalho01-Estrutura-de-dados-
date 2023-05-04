@@ -73,9 +73,6 @@ public class NohLocacao {
     }
 
 
-    
-
-
     public NohCliente getCnh() {
         return cnh;
     }
@@ -105,7 +102,4 @@ public class NohLocacao {
         this.info = info;
     }
 
-    
-
-    
 }
