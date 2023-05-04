@@ -51,15 +51,15 @@ public class CMenuAddCliente {
         lc.adicionarNoClienteF(nc);
         lc.listarCliente();
         limpar();
-
-        // limparCampos(null);
-
-        alertInterface("SUCESSO", "Cliente adicionado com sucesso!", Alert.AlertType.INFORMATION);
+        
+        // Exibir uma mensagem de sucesso
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Sucesso!");
+        alert.setContentText("Cliente adicionado com sucesso!");
+        alert.showAndWait();
     }
 
-    private void alertInterface(String string, String string2, AlertType information) {
-        // System.out.print("foi");
-    }
+
 
     @FXML
     void limpar() {
