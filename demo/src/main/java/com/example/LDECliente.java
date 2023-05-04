@@ -2,6 +2,14 @@ package com.example;
 
 public class LDECliente implements ILDECliente {
     private NohCliente primeiro;
+    public NohCliente getPrimeiro() {
+        return primeiro;
+    }
+
+    public void setPrimeiro(NohCliente primeiro) {
+        this.primeiro = primeiro;
+    }
+
     private NohCliente ultimo;
 
     public LDECliente(NohCliente primeiro, NohCliente ultimo) {

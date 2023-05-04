@@ -44,7 +44,8 @@ public class CMenuClienteEditar {
         Long cpf = Long.parseLong(salvaCPF.getText());
         // Encontra o cliente na lista pelo CPF
         LDECliente lc = new LDECliente(null, null);
-        NohCliente atual = this.primeiro;
+        NohCliente atual = lc.getPrimeiro();
+
         while (atual != null) {
             if (atual.getCpf() == cpf) {
                 // Atualiza os dados do cliente com os valores dos campos de texto
