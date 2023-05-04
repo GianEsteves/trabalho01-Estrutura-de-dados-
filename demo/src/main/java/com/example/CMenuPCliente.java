@@ -83,14 +83,14 @@ public class CMenuPCliente {
 
     @FXML
     void listarFimInicioVeiculo(){
-        //LDECliente lc new LDECliente(null, null);
-        //lc.exibirClientes();
+        LDECliente lc = new LDECliente(null, null);
+        lc.listarCliente();
     }
 
     
     @FXML
     void listarClienteFI(){
-        //LDECliente lc new LDECliente(null, null);
-        //lc.listarCliente();
+        LDECliente listaCliente = new LDECliente(null, null);
+        listaCliente.exibirClientes();
     }
 }
