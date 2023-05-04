@@ -62,11 +62,8 @@ public class LDECategoria implements ILDECategoria {
 
     @Override
     public void listarInicioFimCategoria() {
-        NohCategoria atual = this.primeiro;
-        while (atual != null) {
-            System.out.println("Categoria: " + atual.categoria + ", Código Categoria: " + atual.codCategoria);
-            atual = atual.getProx();
-        }
+        lerCsv();
+        
     }
 
     @Override

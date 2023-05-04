@@ -26,8 +26,7 @@ public class CMenuPCategoria {
     @FXML
     void listarCategoriaIF(){
         LDECategoria lc = new LDECategoria();
-        lc.imprimirNohCategoria();
-        lc.listarFimInicioCategoria();
+        lc.listarInicioFimCategoria();
     }
 
 }
