@@ -38,17 +38,22 @@ public class CMenuAddCliente {
     @FXML
     void adicionaliente() throws Exception {
 
-        String cpf = salvaCPF.getText();
-        String cnh = salvaCNH.getText();
-        String telefone = salvaTelefone.getText();
         String nome = salvaNome.getText();
+        long cnh = Long.parseLong(salvaCNH.getText());
+        long telefone = Long.parseLong(salvaTelefone.getText());
+        long cpf = Long.parseLong(salvaCPF.getText());
+        
+        
+
+        
 
         // Cria um novo objeto NohCliente com as informações fornecidas
         // NohCliente novoNoh = new NohCliente(nome, 0, 0, 0)
-        NohCliente novoNoh = new NohCliente(nome, cnh, telefone, cpf);
+        //NohCliente novoNoh = new NohCliente(nome, cnh, telefone, cpf);
+        NohCliente nc = new NohCliente(nome, cnh, telefone, cpf);
         LDECliente lc = new LDECliente(null, null);
-        lc.adicionarNoCliente(novoNoh);
-        lc.listarCliente();
+        lc.adicionarNoCliente(nc);
+        //lc.listarCliente();
         // limpar();
 
         // limparCampos(null);

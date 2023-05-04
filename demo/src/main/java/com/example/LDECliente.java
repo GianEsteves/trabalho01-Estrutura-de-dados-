@@ -21,6 +21,17 @@ public class LDECliente implements ILDECliente {
     }
 
     @Override
+    public void adicionarNoClienteF(NohCliente novoNoh) {
+        if (this.ultimo == null) {
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            this.ultimo.setAnt(novoNoh);
+            this.ultimo = novoNoh;
+        }
+    }
+
+    @Override
     public void exibirClientes() {
         NohCliente atual = this.primeiro;
         while (atual != null) {
