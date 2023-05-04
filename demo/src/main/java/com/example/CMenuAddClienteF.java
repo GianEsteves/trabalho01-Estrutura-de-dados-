@@ -53,8 +53,6 @@ public class CMenuAddClienteF {
         lc.listarCliente();
         //limpar();
         
-        //limparCampos(null);
-        
         alertInterface("SUCESSO", "Cliente adicionado com sucesso!", Alert.AlertType.INFORMATION);
     }
 

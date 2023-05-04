@@ -49,8 +49,8 @@ public class CMenuAddCliente {
         NohCliente nc = new NohCliente(nome, cnh, telefone, cpf);
         LDECliente lc = new LDECliente(null, null);
         lc.adicionarNoClienteF(nc);
-        //lc.listarCliente();
-        // limpar();
+        lc.listarCliente();
+        limpar();
 
         // limparCampos(null);
 
