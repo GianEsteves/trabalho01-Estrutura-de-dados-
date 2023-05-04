@@ -45,8 +45,8 @@ public class CMenuLocacaoAdd {
         String cpf = salvaCPF.getText();
         String placa = salvaPlaca.getText();
 
-        NohLocaçao nl = new NohLocaçao(null);
-        LDELocaçao ll = new LDELocaçao(null, null);
+        NohLocacao nl = new NohLocacao(null);
+        LDELocacao ll = new LDELocacao(null, null);
         ll.alocarVeiculoCliente(null, null);
 
         // Exibir uma mensagem de sucesso
@@ -65,7 +65,7 @@ public class CMenuLocacaoAdd {
         String cpf = salvaCPF.getText();
 
         // criar objeto Locacao com as informações
-        LDELocaçao locacao = new LDELocaçao(null, null);
+        LDELocacao locacao = new LDELocacao(null, null);
         locacao.alocarVeiculoCliente(cpf, placa);
 
         // adicionar locação à lista

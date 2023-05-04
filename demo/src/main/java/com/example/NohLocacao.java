@@ -2,44 +2,43 @@ package com.example;
 
 import java.util.Date;
 
-public class NohLocaçao {
-    private NohLocaçao proximo;
-    private NohLocaçao anterior;
+public class NohLocacao {
+    private NohLocacao proximo;
+    private NohLocacao anterior;
     private double valor;
     private Date dataRetirada;
     private Date dataDevolucao;
-    private NohCliente nohCliente;
-    private NohVeiculo nohVeiculo;
-    private NohLocaçao info;
+    private NohCliente cnh;
+    private NohVeiculo placaVeiculo;
+    private NohLocacao info;
     
     
-    public NohLocaçao(double valor, Date dataRetirada, Date dataDevolucao) {
+    public NohLocacao() {
         this.valor = valor;
         this.dataRetirada = dataRetirada;
         this.dataDevolucao = dataDevolucao;
     }
 
 
-    public NohLocaçao(LDELocaçao locacao) {
+    public NohLocacao(LDELocacao locacao) {
     }
 
-
-    public NohLocaçao getProx() {
+    public NohLocacao getProx(){
         return proximo;
     }
 
 
-    public void setProx(NohLocaçao proximo) {
+    public void setProx(NohLocacao proximo) {
         this.proximo = proximo;
     }
 
 
-    public NohLocaçao getAnt() {
+    public NohLocacao getAnt() {
         return anterior;
     }
 
 
-    public void setAnt(NohLocaçao anterior) {
+    public void setAnt(NohLocacao anterior) {
         this.anterior = anterior;
     }
 
@@ -74,26 +73,35 @@ public class NohLocaçao {
     }
 
 
-    public NohCliente getNohCliente() {
-        return nohCliente;
-    }
-
-    public NohVeiculo getNohVeiculo() {
-        return nohVeiculo;
-    }
+    
 
 
-    public void setNohCliente(NohCliente nohCliente) {
-        this.nohCliente = nohCliente;
+    public NohCliente getCnh() {
+        return cnh;
     }
 
 
-    public NohLocaçao getInfo() {
+    public void setCnh(NohCliente cnh) {
+        this.cnh = cnh;
+    }
+
+
+    public NohVeiculo getPlacaVeiculo() {
+        return placaVeiculo;
+    }
+
+
+    public void setPlacaVeiculo(NohVeiculo placaVeiculo) {
+        this.placaVeiculo = placaVeiculo;
+    }
+
+
+    public NohLocacao getInfo() {
         return info;
     }
 
 
-    public void setInfo(NohLocaçao info) {
+    public void setInfo(NohLocacao info) {
         this.info = info;
     }
 
