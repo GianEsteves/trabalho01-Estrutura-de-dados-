@@ -31,7 +31,7 @@ public class CMenuPCliente {
 
     @FXML
     public void abrirFXMLMaddI() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuAddCliente.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuAddClienteI.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         Stage stage = new Stage();

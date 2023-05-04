@@ -36,37 +36,34 @@ public class CMenuAddClienteF {
     private Button voltar;
 
     @FXML
-    void adicionaliente() throws Exception {
+    void adicionaDliente() throws Exception {
+
 
         String nome = salvaNome.getText();
         long cnh = Long.parseLong(salvaCNH.getText());
         long telefone = Long.parseLong(salvaTelefone.getText());
         long cpf = Long.parseLong(salvaCPF.getText());
+     
         
-        
-
-        
-
         // Cria um novo objeto NohCliente com as informações fornecidas
-        // NohCliente novoNoh = new NohCliente(nome, 0, 0, 0)
-        //NohCliente novoNoh = new NohCliente(nome, cnh, telefone, cpf);
-        NohCliente nc = new NohCliente(nome, cnh, telefone, cpf);
+        //NohCliente  novoNoh = new NohCliente(nome, 0, 0, 0)
+        NohCliente novoNoh = new NohCliente(nome, cnh, telefone, cpf);
         LDECliente lc = new LDECliente(null, null);
-        lc.adicionarNoClienteF(nc);
-        //lc.listarCliente();
-        // limpar();
-
-        // limparCampos(null);
-
+        lc.adicionarNoCliente(novoNoh);
+        lc.listarCliente();
+        //limpar();
+        
+        //limparCampos(null);
+        
         alertInterface("SUCESSO", "Cliente adicionado com sucesso!", Alert.AlertType.INFORMATION);
     }
 
     private void alertInterface(String string, String string2, AlertType information) {
-        // System.out.print("foi");
+        //System.out.print("foi");
     }
 
     @FXML
-    void limpar() {
+    void limpar(){
         salvaCPF.setText("");
         salvaCNH.setText("");
         salvaTelefone.setText("");
@@ -81,8 +78,8 @@ public class CMenuAddClienteF {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.show();
-
-        // CMenuPCliente controller = loader.getController();
+    
+        //CMenuPCliente controller = loader.getController();
         // fazer algo com o controlador, se necessário
     }
 
