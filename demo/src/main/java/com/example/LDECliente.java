@@ -47,7 +47,7 @@ public class LDECliente implements ILDECliente {
         while (atual != null) {
             System.out.println("Nome: " + atual.nome + ", CNH: " + atual.cnh + ", Telefone: " + atual.telefone
                     + ", CPF: " + atual.cpf);
-            atual = atual.getProx();
+            atual = atual.getAnt();
         }
 
     }
